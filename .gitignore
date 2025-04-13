@@ -1,28 +1,33 @@
-# Maven
+HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-.mvn/wrapper/maven-wrapper.properties
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# IntelliJ
-.idea/
-*.iml
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
 *.iws
+*.iml
 *.ipr
-out/
 
-# Logs
-*.log
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# OS files
-.DS_Store
-Thumbs.db
-
-# Lombok
-lombok.config
-
-# Environment / sensitive files
-.env
-*.env
-
-# VS Code
+### VS Code ###
 .vscode/
