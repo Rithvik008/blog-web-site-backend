@@ -12,10 +12,19 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 public class PostDto {
+    private Integer postId;
     private String title;
     private String content;
     private String imageName;
     private Date addedDate;
     private CategoryDto categoryDto;
     private UserDto userDto;
+
+    public void setUserDto(UserDto userDto) {
+        this.userDto = userDto;
+    }
+
+    public void setCategoryDto(CategoryDto categoryDto) {
+        this.categoryDto = categoryDto;
+    }
 }
