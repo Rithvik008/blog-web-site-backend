@@ -1,12 +1,15 @@
 package com.thinkingrodent.blog.blog_app_apis.payloads;
 
 import com.thinkingrodent.blog.blog_app_apis.entities.Category;
+import com.thinkingrodent.blog.blog_app_apis.entities.Comment;
 import com.thinkingrodent.blog.blog_app_apis.entities.User;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -19,6 +22,8 @@ public class PostDto {
     private Date addedDate;
     private CategoryDto categoryDto;
     private UserDto userDto;
+
+    private Set<CommentDto> comments=new HashSet<>();
 
     public void setUserDto(UserDto userDto) {
         this.userDto = userDto;
